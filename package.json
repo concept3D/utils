@@ -1,5 +1,5 @@
 {
-  "name": "utils",
+  "name": "@concept3d/utils",
   "version": "1.0.0",
   "description": "Shared functions between all the Concept3D Plaform Features.",
   "main": "index.js",
