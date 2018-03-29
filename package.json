@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/concept3d/utils/issues"
   },
-  "homepage": "https://github.com/concept3d/utils#readme"
+  "homepage": "https://github.com/concept3d/utils#readme",
+  "dependencies": {
+    "aws-sdk": "^2.216.1"
+  }
 }
