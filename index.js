@@ -3,7 +3,7 @@ const AWS = require('aws-sdk');
 const { IS_OFFLINE, DB_PORT } = process.env;
 let dynamoDb;
 
-function connectDatabase() {
+exports.connectDatabase = function() {
   if (!dynamoDb) {
     if (IS_OFFLINE === 'true') {
       dynamoDb = new AWS.DynamoDB.DocumentClient({
@@ -16,6 +16,4 @@ function connectDatabase() {
   }
   return dynamoDb;
 }
-
-exports.connectDatabase = connectDatabase();
 
